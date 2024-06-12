@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
-</script>
-
 <template>
   <h1>{{ msg }}</h1>
 
@@ -29,7 +21,23 @@ const count = ref(0)
     in your IDE for a better DX
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <Button>Click me</Button>
 </template>
+
+<script lang="ts">
+import { Button } from './ui/button'
+
+export default {
+  name: 'HelloWorld'
+}
+</script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+defineProps<{ msg: string }>()
+
+const count = ref(0)
+</script>
 
 <style scoped>
 .read-the-docs {
