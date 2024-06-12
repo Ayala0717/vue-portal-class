@@ -15,7 +15,7 @@ import { type ButtonVariants, buttonVariants } from '.'
 import { cn } from '@/lib/utils'
 
 export default {
-  name: 'Button'
+  name: 'UiButton'
 }
 </script>
 

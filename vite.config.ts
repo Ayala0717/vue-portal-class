@@ -35,6 +35,7 @@ export default defineConfig({
   optimizeDeps: {
     include: [
       'vue',
+      'vue-router',
       'class-variance-authority',
       'radix-vue',
       'clsx',
