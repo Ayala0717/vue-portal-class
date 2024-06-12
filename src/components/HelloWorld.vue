@@ -1,12 +1,10 @@
 <template>
   <h1>{{ props.msg }}</h1>
 
-  <Button>Click me</Button>
+  <UiButton>Click me</UiButton>
 </template>
 
 <script lang="ts">
-import { Button } from './ui/button'
-
 export default {
   name: 'HelloWorld'
 }

@@ -11,17 +11,9 @@
 </template>
 
 <script lang="ts">
-import { defineAsyncComponent } from 'vue'
-
 export default {
   name: 'App'
 }
-</script>
-
-<script lang="ts" setup>
-const HelloWorld = defineAsyncComponent(
-  () => import('./components/HelloWorld.vue')
-)
 </script>
 
 <style scoped>
