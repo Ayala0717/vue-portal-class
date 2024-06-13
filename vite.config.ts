@@ -23,6 +23,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       extensions: ['vue', 'tsx', 'svg'],
       directoryAsNamespace: true,
+
       importPathTransform: (path: string) =>
         path.endsWith('.svg') ? `${path}?component` : undefined
     })

@@ -1,15 +1,15 @@
 <template>
-  <span
-    class="inline-block h-5rem w-5rem"
-    :class="cn(props.wrapperClasses, props.iconClass, props.iconName)"
-    data-inline="false"
-  >
-  </span>
+  <iconify-icon
+    v-if="props.iconName"
+    class="aspect-square"
+    :class="props.iconClass"
+    :icon="props.iconName"
+    :width="props.width"
+    :height="props.height"
+  />
 </template>
 
 <script lang="ts">
-import { cn } from '@/lib/utils'
-
 export default {
   name: 'IconResolver'
 }
@@ -17,14 +17,15 @@ export default {
 
 <script lang="ts" setup>
 interface Props {
+  iconName: string
   iconClass?: string
-  iconName?: string
-  wrapperClasses?: string
+  width?: string
+  height?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  iconClass: '',
-  iconName: '',
-  wrapperClasses: ''
+  width: '2rem',
+  height: '2rem',
+  iconClass: ''
 })
 </script>

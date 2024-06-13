@@ -20,7 +20,7 @@ const authorize = (to: RouteLocationNormalized) => {
 }
 
 router.beforeEach(async (to) => {
-  const auth = false
+  const auth = true
 
   if (auth) {
     if (to.name === 'login') return 'home'

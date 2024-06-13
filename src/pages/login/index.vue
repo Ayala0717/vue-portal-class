@@ -7,11 +7,11 @@
         <h1 class="text-5xl font-bold">{t('loginPage.title')}</h1>
         <p class="text-lg fw-400 op-30">{t('loginPage.description')}</p>
         <FormBox
-          requireSubmit
-          defaultValues="{defaultValues}"
-          formField="{formField}"
-          formSchema="{formSchema}"
-          onSubmit="{handleSubmit}"
+          require-submit
+          default-values="{defaultValues}"
+          form-field="{formField}"
+          form-schema="{formSchema}"
+          on-submit="{handleSubmit}"
         />
       </div>
       <div
@@ -20,8 +20,8 @@
         <div class="flex items-center justify-end gap-3 p-8">
           <p class="text-xl font-bold">{t('title')}</p>
           <IconResolver
-            iconClass="w-3rem h-3rem"
-            iconName="i-tdesign:logo-qq"
+            icon-class="w-3rem h-3rem"
+            icon-name="i-tdesign:logo-qq"
           />
         </div>
         <div class="mt-auto">
